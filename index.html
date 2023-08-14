@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="script/script.js" async></script>
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+ 
+</head>
+<body>
+<section class="header">
+  <img src="images/icon-menu.svg" alt="menu" class="mobile">
+  <div class="mob-box">
+    <img src="images/icon-close.svg" alt="" class="mob-rem" />
+      <div class="links">
+        <a href="#">Collections</a>
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+  </div>
+  <div class="shadow"></div>
+  <h2 class="label">sneakers</h2>
+  <nav class="nav">
+    <div class="links">
+      <a href="#">Collections</a>
+      <a href="#">Men</a>
+      <a href="#">Women</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+  <div class="user">
+    <div class="cart-main">
+      <span class="note">1</span>
+      <img src="images/icon-cart.svg" alt="cart" class="cart mainCart">
+    </div>
+    <img src="images/image-avatar.png" alt="Avater" class="avater">
+  </div>
+</section>
+<div class="hover">
+  <h4>Cart</h4>
+  <div class="content">
+    <h5 class="head">Your cart is empty</h5>
+  </div>
+  <input type="submit" value="Checkout" class="checkout" />
+</div>
+<section class="main">
+  <div class="model">
+    <div class="display" >
+      <ul class="slideShow select-img">
+        <li class="slide activate" ><img src="images/image-product-1.jpg" /></li>
+        <li class="slide"><img src="images/image-product-2.jpg" alt=""  /></li>
+        <li class="slide"><img src="images/image-product-3.jpg" alt=""  /></li>
+        <li class="slide"><img src="images/image-product-4.jpg" alt="" /></li>
+
+      </ul>
+      <img src="images/icon-previous.svg" alt="" class="next" data-button="prev" />
+      <img src="images/icon-next.svg" alt="" class="prev" data-button="next" />
+    </div>
+    <ul class="gallery">
+      <li class="active"><img src="images/image-product-1-thumbnail.jpg" alt="" class="display-img"></li>
+      <li><img src="images/image-product-2-thumbnail.jpg" alt=""></li>
+      <li><img src="images/image-product-3-thumbnail.jpg" alt=""></li>
+      <li><img src="images/image-product-4-thumbnail.jpg" alt=""></li>
+    </ul>
+  </div>
+  <div class="desktop">
+    <div class="display">
+      <div class="cancel">
+        <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg" class="exit">
+          <path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="#69707D" fill-rule="evenodd"/>
+        </svg>
+      </div>
+      <ul class="slideShow desk">
+        <li class="slide activate2 img1" ><img src="images/image-product-1.jpg" alt="" /></li>
+        <li class="slide img2"><img src="images/image-product-2.jpg" alt=""  /></li>
+        <li class="slide img3"><img src="images/image-product-3.jpg" alt=""  /></li>
+        <li class="slide img4"><img src="images/image-product-4.jpg" alt="" /></li>
+
+      </ul>
+      <div class="svg right">
+         <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg" class="next" data-btn="next">
+          <path d="m2 1 8 8-8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/>
+        </svg> 
+      </div>
+      <div class="svg left">
+        <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg" class="prev" data-btn="prev">
+          <path d="M11 1 3 9l8 8" stroke="#1D2026" stroke-width="3" fill="orange" fill-rule="evenodd"/>
+        </svg>
+      </div>
+
+      <ul class="gallery min-gallery">
+        <li class="activating list1"><img src="images/image-product-1-thumbnail.jpg" alt="" onclick="select(1)"></li>
+        <li class="list2"><img src="images/image-product-2-thumbnail.jpg" alt="" onclick="select(2)"></li>
+        <li class="list3"><img src="images/image-product-3-thumbnail.jpg" alt="" onclick="select(3)"></li>
+        <li class="list4"><img src="images/image-product-4-thumbnail.jpg" alt="" onclick="select(4)"></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="details">
+    <h3>Sneaker Company</h3>
+    <h2 class="edition"> Fall Limited Edition Sneakers</h2>
+    <p>
+      These low-profile sneakers are your perfect casual wear companion. Featuring a 
+      durable rubber outer sole, they’ll withstand everything the weather can offer.    
+    </p>
+    <div class="cart">
+      <div class="price">
+        <span class="doll"><span class="price-1">$125.00</span><span class="promo">50%</span></span>
+        <span class="actual">$250.00</span>
+      </div>
+      <div class="addCart">
+        <div class="add">
+          <img src="images/icon-minus.svg" alt="" class="minus" />
+          <span class="number amount">0</span>
+          <img src="images/icon-plus.svg" alt="" class="increase" />
+        </div>
+        <span class="btn-add-to button"><img src="images/icon-cart.svg" alt="" /><span>Add to cart</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+  
+   <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">EMMANUEL DALISO BANDA</a>.
+  </div> 
+</body>
+</html>
